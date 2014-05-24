@@ -1,0 +1,75 @@
+% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2013-2014 Magnus Helmersson (magnus.helmersson@gmail.com)
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage[swedish,english]{babel}
+\moderncvstyle{mycasual}
+\moderncvcolor{blue}
+
+\usepackage[scale=0.75]{geometry}
+\name{Magnus}{Helmersson}
+\title{Cirriculum Vitae}
+\address{(omitted for web)}{(omitted for web)}
+\phone[mobile]{(omitted for web)}
+\email{magnus.helmersson@gmail.com}
+%\homepage{www.johndoe.com}
+\social[linkedin]{magnushelmersson}
+\social[github]{mhelmer}
+
+\begin{document}
+\selectlanguage{swedish}
+\makecvtitle
+
+\section{Education}
+\cventry{}{Degree Programme in Engineering Physics}{Royal Institute of Technology}{Stockholm, Sweden}{}{M.Sc.: Scientific Computing \\Expected to Graduate in October 2014}
+\cventry{2006}{Gymnasium, Natural Science Programme}{Forsmarks skola}{Forsmark, Sweden}{}{Specialisation: Energy Technology}
+
+\section{Master Thesis (ongoing)}
+\cvitem{Work Title}{\emph{Performance analysis and improvement of a P3M code}}
+\cvitem{Supervisor}{Michael Schliephake, PDC, KTH}
+
+\section{Experience}
+\cventry{June 2013 --}{Support Engineer}{PDC Center for High Performance Computing, KTH}{Stockholm}{}{%
+	Helping people make the most out of PDC resources, including Lindgren, a Cray XE6 system with 1516 nodes and totally 36384 CPU cores.
+\begin{itemize}  \itemsep -2pt %reduce space between items
+	\item User support and monitoring of Linux clusters
+	\item Keeping internal and external documentation up to date
+	\item Installing software on the systems
+\end{itemize}}
+
+\cventry{Summers 2008--2012}{Salesman, building materials}{Beijer Byggmaterial}{Östhammar}{}{%
+\begin{itemize}  \itemsep -2pt
+	\item Cashier and warehouse
+	\item Deliveries of construction material
+	\item Driving forklift
+\end{itemize}}
+
+\section{Languages}
+\cvitemwithcomment{Swedish}{Native Language}{}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{German}{Novice}{}
+
+\section{Computer Skills}
+\cvitem{Languages}{C, Python, Matlab, HTML/CSS}
+\cvitem{Technologies}{MPI, OpenMP, Django, Shell scripting, \LaTeX, Git, Vim, Linux, Windows}
+
+\section{Hobbies}
+\cvitem{Music}{Production and sound system}
+\cvitem{Computers}{Linux, scriptning and hardware}
+
+\section{Driver's Licenses}
+\cvlistitem{B, Swedish (Car)}
+
+
+\section{References}
+Given upon request
+
+\clearpage
+\end{document}
+
+%% end of file `template.tex'.

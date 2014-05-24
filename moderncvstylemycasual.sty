@@ -1,0 +1,54 @@
+%% start of file `moderncvstylemymycasual.sty'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2013-2014 Magnus Helmersson (magnus.helmersson@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+%-------------------------------------------------------------------------------
+%                identification
+%-------------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{moderncvstylemycasual}[2013/04/29 v1.5.1 modern curriculum vitae and letter style scheme: mystyle]
+
+
+%-------------------------------------------------------------------------------
+%                required packages
+%-------------------------------------------------------------------------------
+\RequirePackage{moderncvstylecasual}
+
+%-------------------------------------------------------------------------------
+%                overall style definition
+%-------------------------------------------------------------------------------
+
+
+%-------------------------------------------------------------------------------
+%                resume style definition
+%-------------------------------------------------------------------------------
+
+\renewcommand*{\cventry}[7][.25em]{%
+  \begin{tabular}{@{}p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}%
+    \raggedleft\hintstyle{#2} &{\bfseries#3}{
+		\newline{}\begin{minipage}[t]{\linewidth}
+			{\slshape#4}%
+			\ifthenelse{\equal{#5}{}}{}{, #5}%
+			\ifthenelse{\equal{#6}{}}{}{, #6}%
+		\end{minipage}
+      \ifx&#7&%
+        \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi 
+	}
+  \end{tabular}%
+  \par\addvspace{#1}
+  }
+
+%-------------------------------------------------------------------------------
+%                letter style definition
+%-------------------------------------------------------------------------------
+
+
+\endinput
+
+
+%% end of file `moderncvstylemycasual.sty'.

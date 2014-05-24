@@ -1,0 +1,16 @@
+*xdanaux*
+*.sh
+examples/*.sh
+examples/*.diff
+*.asv
+*.swp
+*.log
+*.aux
+*.dvi
+*.fls
+*.fdb_latexmk
+*.asv
+*.m~
+|.out
+|.toc
+*.out
